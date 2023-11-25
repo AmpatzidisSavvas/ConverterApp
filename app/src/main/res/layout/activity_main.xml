@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text=" Unit Converter"
+        android:textAlignment="center"
+        android:textColor="#403F3F"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/buttonConvert"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:typeface="monospace"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPounds" />
+
+    <TextView
+        android:id="@+id/textPounds"
+        android:layout_width="183dp"
+        android:layout_height="38dp"
+        android:text="Pounds"
+        android:textAlignment="center"
+        android:textColor="#635E5E"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConvert"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/editTextWeight"
+        android:text="CONVERT TO POUNDS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="287dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:textSize="25dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:hint="Kg"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKg" />
+
+    <TextView
+        android:id="@+id/textKg"
+        android:layout_width="274dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Here Kilograms"
+        android:textAlignment="center"
+        android:textColor="#504C4C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:srcCompat="@drawable/icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
