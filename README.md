@@ -1,4 +1,4 @@
-# ConverterApp
+# ConverterMobileApp
 
 <b>--> A Android App that convert Kg to Pounds</b>
 
